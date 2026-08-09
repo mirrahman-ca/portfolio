@@ -16,7 +16,7 @@ export const profile = {
   summary:
     "AWS-certified Solutions Architect and Senior Software Engineer with 12+ years of experience building cloud-native systems across financial services, payments, trading, insurance, industrial automation, IoT, and data platforms. Hands-on across C#, .NET, Python, TypeScript, AWS, Google Cloud, distributed systems, privacy engineering, and practical AI integration.",
   availability:
-    "Open to senior engineering and solutions architecture opportunities.",
+    "Open to Solutions Architect, Staff Software Engineer, and Senior Software Engineer roles.",
   email: "hello@mirrahman.ca",
   phone: "+15873703794",
   linkedin: "https://linkedin.com/in/axixur",
