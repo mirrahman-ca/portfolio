@@ -1,4 +1,5 @@
 import { ExperienceTimeline } from "@/components/experience-timeline";
+import { AnimationController } from "@/components/animation-controller";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
@@ -20,6 +21,7 @@ const personJsonLd = {
 export default function Home() {
   return (
     <>
+      <AnimationController />
       <a className="skip-link" href="#main-content">Skip to content</a>
       <Header />
       <main id="main-content">

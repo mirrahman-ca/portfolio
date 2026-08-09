@@ -54,6 +54,14 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .mobile-nav a { padding: 8px 0; }
 
 .hero { min-height: calc(100svh - 70px); padding-block: 100px 84px; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(310px, .7fr); gap: 8vw; align-items: center; }
+.hero-copy > * { animation: hero-rise .7s cubic-bezier(.22, 1, .36, 1) both; }
+.hero-copy > :nth-child(1) { animation-delay: 40ms; }
+.hero-copy > :nth-child(2) { animation-delay: 100ms; }
+.hero-copy > :nth-child(3) { animation-delay: 170ms; }
+.hero-copy > :nth-child(4) { animation-delay: 230ms; }
+.hero-copy > :nth-child(5) { animation-delay: 290ms; }
+.hero-copy > :nth-child(6) { animation-delay: 350ms; }
+.hero-aside { animation: hero-aside-in .85s .22s cubic-bezier(.22, 1, .36, 1) both; }
 .location { display: flex; align-items: center; gap: 9px; }
 .location span, .availability span { width: 7px; height: 7px; border-radius: 50%; background: #2dd4bf; box-shadow: 0 0 0 4px rgba(45, 212, 191, .14); }
 .hero h1 { max-width: 780px; margin: 0; font-family: var(--font-serif), Georgia, serif; font-size: clamp(4.2rem, 9.5vw, 8.4rem); font-weight: 550; letter-spacing: -.062em; line-height: .87; }
@@ -222,6 +230,19 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .footer a { font-size: .72rem; transition: color .2s; }
 .footer a:hover { color: white; }
 
+.reveal-pending { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--reveal-delay, 0ms) cubic-bezier(.22, 1, .36, 1), transform .7s var(--reveal-delay, 0ms) cubic-bezier(.22, 1, .36, 1); }
+.reveal-pending.reveal-visible { opacity: 1; transform: translateY(0); }
+
+@keyframes hero-rise {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hero-aside-in {
+  from { opacity: 0; transform: translateX(28px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
 @media (max-width: 900px) {
   .section { padding-block: 86px; }
   .hero { grid-template-columns: 1fr; min-height: auto; gap: 60px; }
@@ -283,5 +304,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  *, *::before, *::after { transition-duration: .01ms !important; }
+  *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; transition-delay: 0ms !important; }
+  .reveal-pending { opacity: 1; transform: none; }
 }
