@@ -138,9 +138,11 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .impact-card p { margin: 0; color: var(--muted); font-size: .84rem; line-height: 1.68; }
 .impact-accent { position: absolute; left: 25px; right: 25px; bottom: 0; height: 2px; background: linear-gradient(90deg, var(--accent), transparent); opacity: 0; transform: scaleX(.35); transform-origin: left; transition: opacity .25s ease, transform .25s ease; }
 .impact-card:hover .impact-accent { opacity: .8; transform: scaleX(1); }
-.impact-callout { margin-top: 24px; padding: 24px 28px; display: flex; align-items: center; gap: 20px; background: linear-gradient(110deg, #075985, #0c4a6e); color: white; box-shadow: 0 18px 45px -28px rgba(56, 189, 248, .8); }
-.impact-callout > span { color: #72bce9; font-size: 1.4rem; }
-.impact-callout p { margin: 0; font-size: .93rem; }
+.impact-callout { position: relative; margin-top: 24px; padding: 27px 30px; display: flex; align-items: center; gap: 20px; overflow: hidden; border: 1px solid rgba(125, 211, 252, .38); border-radius: 18px; background: linear-gradient(120deg, #075985 0%, #075074 55%, #0b3b5d 100%); color: white; box-shadow: inset 0 1px 0 rgba(255, 255, 255, .13), 0 24px 55px -30px rgba(56, 189, 248, .95); }
+.impact-callout::after { position: absolute; top: -90px; right: -45px; width: 210px; height: 210px; border-radius: 50%; background: rgba(56, 189, 248, .14); filter: blur(4px); content: ""; }
+.impact-callout > span { position: relative; z-index: 1; width: 42px; height: 42px; flex: 0 0 auto; display: grid; place-items: center; border: 1px solid rgba(186, 230, 253, .3); border-radius: 12px; background: rgba(2, 132, 199, .24); color: #bae6fd; font-size: 1.25rem; }
+.impact-callout p { position: relative; z-index: 1; margin: 0; font-size: .93rem; line-height: 1.65; }
+.impact-callout .impact-lead { color: #e0f2fe; font-weight: 850; }
 
 .timeline { position: relative; display: grid; gap: 22px; }
 .timeline-item { position: relative; display: grid; grid-template-columns: 68px 185px minmax(0, 1fr); gap: 24px; align-items: start; }
@@ -219,11 +221,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .recommendation-context time { flex: 0 0 auto; text-align: right; }
 
 .beyond-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.beyond-card { min-height: 210px; padding: 32px; display: flex; justify-content: space-between; align-items: flex-start; border: 1px solid var(--line); background: var(--surface); transition: border-color .2s, transform .2s; }
-.beyond-card:hover { border-color: var(--accent); background: rgba(14, 165, 233, .055); transform: translateY(-3px); }
-.beyond-card > svg { color: var(--accent); font-size: 1.2rem; }
+.beyond-card { min-height: 220px; padding: 32px; display: flex; justify-content: space-between; align-items: flex-start; overflow: hidden; border: 1px solid rgba(125, 211, 252, .2); border-radius: 20px; background: linear-gradient(145deg, rgba(14, 165, 233, .075), rgba(255, 255, 255, .025)); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .055), 0 24px 55px -42px rgba(14, 165, 233, .85); transition: border-color .25s, box-shadow .25s, transform .25s; }
+.beyond-card:hover { border-color: rgba(125, 211, 252, .52); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .08), 0 28px 60px -38px rgba(14, 165, 233, 1); transform: translateY(-4px); }
+.beyond-card > svg { width: 40px; height: 40px; flex: 0 0 auto; padding: 11px; border: 1px solid rgba(125, 211, 252, .25); border-radius: 12px; background: rgba(14, 165, 233, .1); color: #7dd3fc; transition: background-color .25s, transform .25s; }
+.beyond-card:hover > svg { background: rgba(14, 165, 233, .18); transform: translate(2px, -2px); }
 .beyond-card p { margin: 0 0 28px; color: var(--accent); font-size: .72rem; font-weight: 720; letter-spacing: .09em; text-transform: uppercase; }
-.beyond-card h3 { margin: 0 0 8px; font-family: var(--font-serif), Georgia, serif; font-size: 1.42rem; font-weight: 570; line-height: 1.2; }
+.beyond-card h3 { margin: 0 0 8px; color: #f1f5f9; font-family: var(--font-serif), Georgia, serif; font-size: 1.42rem; font-weight: 570; line-height: 1.2; }
 .beyond-card span { color: var(--muted); font-size: .86rem; }
 
 .contact-section { background: radial-gradient(circle at 50% 0%, rgba(56, 189, 248, .16), transparent 32rem), #061325; border-top: 1px solid var(--line); }

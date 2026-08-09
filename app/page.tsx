@@ -56,7 +56,7 @@ export default function Home() {
             </div>
             <div className="impact-callout">
               <span aria-hidden="true">↗</span>
-              <p>Delivered architecture and implementation improvements that reduced a major data-transfer workflow’s operating cost by <strong>approximately 40%</strong>—about <strong>$20,000 CAD per month.</strong></p>
+              <p><strong className="impact-lead">One of my most meaningful engineering achievements:</strong> delivering architecture and implementation improvements that reduced a major data-transfer workflow’s operating cost by <strong>approximately 40%</strong>—about <strong>$20,000 CAD per month</strong>, or approximately <strong>$240,000 CAD per year.</strong></p>
             </div>
           </div>
         </section>
@@ -86,7 +86,7 @@ export default function Home() {
 
         <section id="certifications" className="section section-tinted certifications-section" aria-labelledby="certifications-title">
           <div className="shell">
-            <SectionHeading eyebrow="AWS Certifications" title="Validated cloud expertise." />
+            <SectionHeading eyebrow="AWS Certifications" title="AWS-certified cloud expertise." intro={profile.certificationNote} />
             <div className="certification-grid">
               {profile.certifications.map((certification) => (
                 <article className="certification-card" key={certification.title}>

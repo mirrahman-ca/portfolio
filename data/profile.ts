@@ -173,6 +173,8 @@ export const profile = {
       verificationLabel: "Verify on Credly",
     },
   ],
+  certificationNote:
+    "More than a decade of hands-on AWS experience, reinforced by two certifications earned through proctored, in-person exams at AWS-authorized testing centers, with scaled scores above 850.",
   recommendations: [
     {
       name: "Vahid Mohammadi",
