@@ -88,6 +88,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .qr-dialog-intro { max-width: 330px; margin: 12px auto 22px; color: var(--muted); font-size: .84rem; line-height: 1.6; }
 .qr-dialog-close { position: absolute; top: 16px; right: 16px; width: 35px; height: 35px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 10px; background: rgba(255, 255, 255, .025); color: var(--muted); cursor: pointer; transition: color .2s, border-color .2s, background-color .2s; }
 .qr-dialog-close:hover { color: white; border-color: rgba(56, 189, 248, .38); background: rgba(56, 189, 248, .08); }
+.qr-save-contact { width: 100%; min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; border: 1px solid rgba(56, 189, 248, .4); border-radius: 11px; background: #0ea5e9; color: #03111f; font-size: .82rem; font-weight: 800; transition: background-color .2s, transform .2s; }
+.qr-save-contact:hover { background: #38bdf8; transform: translateY(-1px); }
+.qr-save-contact svg { width: 18px; height: 18px; }
+.qr-save-help { margin: 10px auto 0; color: var(--faint); font-size: .68rem; line-height: 1.5; }
+.qr-divider { display: flex; align-items: center; gap: 10px; margin: 20px 0; color: #718398; font-size: .62rem; letter-spacing: .04em; text-transform: uppercase; }
+.qr-divider::before, .qr-divider::after { height: 1px; flex: 1; background: var(--line); content: ""; }
+.qr-divider span { flex: 0 0 auto; }
 .qr-code-wrap { width: fit-content; margin-inline: auto; padding: 15px; border-radius: 15px; background: white; box-shadow: 0 18px 45px -24px rgba(56, 189, 248, .55); }
 .qr-code-wrap svg { width: min(220px, 58vw); height: auto; display: block; }
 .qr-dialog-help { max-width: 310px; margin: 18px auto 0; color: var(--faint); font-size: .7rem; }

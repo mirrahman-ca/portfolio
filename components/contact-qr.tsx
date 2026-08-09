@@ -17,6 +17,8 @@ const vCard = [
   "END:VCARD",
 ].join("\n");
 
+const vCardDownload = `data:text/vcard;charset=utf-8,${encodeURIComponent(vCard)}`;
+
 export function ContactQr() {
   const dialogRef = useRef<HTMLDialogElement>(null);
 
@@ -50,7 +52,15 @@ export function ContactQr() {
           <div className="qr-code-wrap">
             <QRCode value={vCard} size={220} level="M" bgColor="#ffffff" fgColor="#071426" title="Mir Md Azizur Rahman contact details" />
           </div>
-          <p className="qr-dialog-help">Point your phone’s camera at the code and tap the contact prompt.</p>
+          <p className="qr-dialog-help">Point your camera at the code and tap the contact prompt.</p>
+          <div className="qr-divider"><span>or save on this device</span></div>
+          <a className="qr-save-contact" href={vCardDownload} download="mir-rahman.vcf">
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M10 3v9m0 0 3.5-3.5M10 12 6.5 8.5M4 15.5h12" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            Save contact card
+          </a>
+          <p className="qr-save-help">On a phone, tap to open the contact card and add it directly.</p>
           <a className="qr-email-link" href={`mailto:${profile.email}`}>{profile.email}</a>
         </div>
       </dialog>
