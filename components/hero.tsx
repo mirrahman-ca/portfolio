@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowUpRight, Mail } from "./icons";
+import { ArrowUpRight, GitHub, LinkedIn, Mail } from "./icons";
 import { profile } from "@/data/profile";
 import profilePicture from "@/profile-pic.png";
 
@@ -16,8 +16,12 @@ export function Hero() {
           <a className="button button-secondary" href={`mailto:${profile.email}`}><Mail /> Get in touch</a>
         </div>
         <div className="hero-links" aria-label="Social profiles">
-          <a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight /></a>
-          <a href={profile.github} target="_blank" rel="noreferrer">GitHub <ArrowUpRight /></a>
+          <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="Mir Rahman on LinkedIn" title="LinkedIn">
+            <LinkedIn />
+          </a>
+          <a href={profile.github} target="_blank" rel="noreferrer" aria-label="Mir Rahman on GitHub" title="GitHub">
+            <GitHub />
+          </a>
         </div>
       </div>
       <aside className="hero-aside" aria-label="Professional summary">
