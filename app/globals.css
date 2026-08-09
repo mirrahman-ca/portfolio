@@ -46,7 +46,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .brand { display: inline-flex; align-items: center; gap: 12px; font-size: .9rem; }
 .brand span { width: 36px; height: 36px; display: grid; place-items: center; background: var(--navy); color: white; font-size: .72rem; font-weight: 800; letter-spacing: .04em; }
 .brand strong { font-weight: 750; letter-spacing: -.01em; }
-.desktop-nav { display: flex; align-items: center; gap: 32px; }
+.desktop-nav { display: flex; align-items: center; gap: clamp(15px, 1.8vw, 26px); }
 .desktop-nav a, .mobile-nav a { color: #a6b4c7; font-size: .82rem; font-weight: 650; transition: color .2s ease; }
 .desktop-nav a:hover { color: var(--accent); }
 .menu-button { display: none; appearance: none; border: 0; background: none; color: var(--ink); font: inherit; font-size: .84rem; font-weight: 700; cursor: pointer; }

@@ -82,7 +82,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section section-tinted certifications-section" aria-labelledby="certifications-title">
+        <section id="certifications" className="section section-tinted certifications-section" aria-labelledby="certifications-title">
           <div className="shell">
             <SectionHeading eyebrow="Certifications" title="Validated cloud expertise." />
             <div className="certification-grid">
@@ -97,7 +97,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section recommendations-section" aria-labelledby="recommendations-title">
+        <section id="recommendations" className="section recommendations-section" aria-labelledby="recommendations-title">
           <div className="shell">
             <div className="recommendations-header">
               <SectionHeading eyebrow="Recommendations" title="Trusted by the people I’ve worked with." intro="Feedback from engineering leaders and colleagues across the teams and systems we built together." />
