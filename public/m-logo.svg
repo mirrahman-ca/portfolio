@@ -1,5 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" role="img" aria-labelledby="title">
-  <title id="title">Mir Rahman</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" role="img" aria-labelledby="title desc">
+  <title id="title">M logo</title>
+  <desc id="desc">Geometric letter M in blue and teal</desc>
   <defs>
     <linearGradient id="surface" x1="5" y1="3" x2="47" y2="49" gradientUnits="userSpaceOnUse">
       <stop stop-color="#0c4a6e"/>

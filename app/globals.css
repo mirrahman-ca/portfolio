@@ -44,7 +44,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(2, 6, 23, .86); border-bottom: 1px solid var(--line); backdrop-filter: blur(18px); }
 .header-inner { min-height: 70px; display: flex; align-items: center; justify-content: space-between; }
 .brand { display: inline-flex; align-items: center; gap: 12px; font-size: .9rem; }
-.brand span { width: 36px; height: 36px; display: grid; place-items: center; background: var(--navy); color: white; font-size: .72rem; font-weight: 800; letter-spacing: .04em; }
+.brand-mark { width: 38px; height: 38px; object-fit: contain; filter: drop-shadow(0 8px 16px rgba(14, 165, 233, .16)); transition: filter .2s, transform .2s; }
+.brand:hover .brand-mark { filter: drop-shadow(0 10px 20px rgba(14, 165, 233, .28)); transform: translateY(-1px); }
 .brand strong { font-weight: 750; letter-spacing: -.01em; }
 .desktop-nav { display: flex; align-items: center; gap: clamp(15px, 1.8vw, 26px); }
 .desktop-nav a, .mobile-nav a { color: #a6b4c7; font-size: .82rem; font-weight: 650; transition: color .2s ease; }

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 52" role="img" aria-labelledby="title desc">
+  <title id="title">Mir wordmark</title>
+  <desc id="desc">Geometric Mir wordmark in blue and teal</desc>
+  <defs>
+    <linearGradient id="surface" x1="5" y1="3" x2="82" y2="49" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0c4a6e"/>
+      <stop offset="1" stop-color="#071426"/>
+    </linearGradient>
+    <linearGradient id="wordmark" x1="12" y1="15" x2="75" y2="39" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e0f2fe"/>
+      <stop offset=".55" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="86" height="50" rx="14" fill="url(#surface)" stroke="#38bdf8" stroke-opacity=".38" stroke-width="2"/>
+  <path d="M12 38V15l10 12 10-12v23" fill="none" stroke="url(#wordmark)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M42 25v13" fill="none" stroke="url(#wordmark)" stroke-width="4.2" stroke-linecap="round"/>
+  <circle cx="42" cy="18" r="2.4" fill="#7dd3fc"/>
+  <path d="M52 38V25m0 5c2.5-3.6 5.5-5.4 9.5-5.4" fill="none" stroke="url(#wordmark)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="74" cy="16" r="2.2" fill="#2dd4bf"/>
+</svg>

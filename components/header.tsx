@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { profile } from "@/data/profile";
 
 const navigation = [
@@ -20,7 +21,7 @@ export function Header() {
     <header className="site-header">
       <div className="shell header-inner">
         <a className="brand" href="#top" aria-label={`${profile.name}, back to top`}>
-          <span>{profile.initials}</span>
+          <Image className="brand-mark" src="/m-logo.svg" alt="" width={38} height={38} priority />
           <strong>{profile.name}</strong>
         </a>
         <nav className="desktop-nav" aria-label="Primary navigation">
