@@ -46,11 +46,11 @@ export const profile = {
   experience: [
     {
       company: "Samsung Research Canada",
-      role: "Senior Software Engineer (Contract)",
+      role: "Solutions Architecture Consultant & Senior Software Engineer (Contract)",
       dates: "Aug 2025 – Present",
       location: "Vancouver, BC",
       bullets: [
-        "Build and maintain .NET backend services, REST APIs, and data workflows in a regulated financial-services environment.",
+        "Lead solution design, and build and maintain .NET backend services, REST APIs, and data workflows in a regulated financial-services environment.",
         "Own the architecture, implementation, operation, and continuous improvement of business-critical cross-project and cross-region data-transfer workflows.",
         "Design privacy-aware services for PII detection, encryption, and tagging, and architected 25 production data-ingestion pipelines for scalability, idempotency, and recoverability.",
         "Improve reliability and governance through safeguards, structured logging, monitoring, operational diagnostics, and clear design documentation.",

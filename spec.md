@@ -120,11 +120,11 @@ Add a small, factual impact callout beneath the cards:
 
 Use a vertical, easy-to-scan timeline. Each role has dates, location, 2–4 concise bullets, and a technology line. Do not include sensitive customer-specific product information beyond the approved summaries below.
 
-#### Samsung Research Canada — Senior Software Engineer (Contract)
+#### Samsung Research Canada — Solutions Architecture Consultant & Senior Software Engineer (Contract)
 
 `Aug 2025 – Present · Vancouver, BC`
 
-- Build and maintain .NET backend services, REST APIs, and data workflows in a regulated financial-services environment.
+- Lead solution design, and build and maintain .NET backend services, REST APIs, and data workflows in a regulated financial-services environment.
 - Own architecture, implementation, operation, and continuous improvement of business-critical cross-project and cross-region data-transfer workflows.
 - Design and develop privacy-aware data services for PII detection, encryption, and tagging, and enable compliant processing of encrypted customer data.
 - Architected and delivered 25 production data-ingestion pipelines designed for encryption, scalability, fail-safe processing, idempotency, and recoverability.
