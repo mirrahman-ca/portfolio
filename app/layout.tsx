@@ -10,7 +10,10 @@ export const metadata: Metadata = {
   title: "Mir Rahman | Solutions Architect & Senior Software Engineer",
   description:
     "Portfolio of Mir Rahman, an AWS-certified Solutions Architect and Senior Software Engineer building secure, scalable cloud systems, distributed services, data workflows, and AI-assisted applications.",
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    types: { "application/rss+xml": "/feed.xml" },
+  },
   openGraph: {
     type: "website",
     url: "/",
