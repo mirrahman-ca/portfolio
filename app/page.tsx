@@ -98,6 +98,44 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="section recommendations-section" aria-labelledby="recommendations-title">
+          <div className="shell">
+            <div className="recommendations-header">
+              <SectionHeading eyebrow="Recommendations" title="Trusted by the people I’ve worked with." intro="Feedback from engineering leaders and colleagues across the teams and systems we built together." />
+              <a className="recommendations-verify" href={profile.recommendationsUrl} target="_blank" rel="noreferrer">
+                Verify on LinkedIn <ArrowUpRight />
+              </a>
+            </div>
+            <p className="recommendations-name-note">
+              <span>Full name</span>
+              Mir Md Azizur Rahman — some recommendations refer to Mir as “Azizur.”
+            </p>
+            <div className="recommendations-grid">
+              {profile.recommendations.map((recommendation) => (
+                <article className="recommendation-card" key={recommendation.name}>
+                  <div className="quote-mark" aria-hidden="true">“</div>
+                  <blockquote>{recommendation.quote}</blockquote>
+                  <footer className="recommendation-author">
+                    <div className="recommendation-avatar" aria-hidden="true">
+                      {recommendation.name.split(" ").map((part) => part[0]).join("")}
+                    </div>
+                    <div>
+                      <a href={recommendation.profileUrl} target="_blank" rel="noreferrer">
+                        {recommendation.name} <ArrowUpRight />
+                      </a>
+                      <p>{recommendation.title}</p>
+                    </div>
+                  </footer>
+                  <div className="recommendation-context">
+                    <span>{recommendation.relationship}</span>
+                    <time>{recommendation.date}</time>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="section shell beyond-section" aria-labelledby="beyond-title">
           <SectionHeading eyebrow="Beyond the résumé" title="Writing, learning, and building." />
           <div className="beyond-grid">

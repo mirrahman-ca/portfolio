@@ -11,6 +11,7 @@ export const profile = {
     "Open to senior engineering and solutions architecture opportunities.",
   email: "hello@mirrahman.ca",
   linkedin: "https://linkedin.com/in/axixur",
+  recommendationsUrl: "https://www.linkedin.com/in/axixur/details/recommendations/",
   github: "https://github.com/microservices-dotnetcore",
   certificationUrl:
     "https://cp.certmetrics.com/amazon/en/public/verify/credential/N3MBYZEJKBV41JWS",
@@ -154,5 +155,34 @@ export const profile = {
   certifications: [
     "AWS Certified Solutions Architect – Associate",
     "AWS Certified Security – Specialty",
+  ],
+  recommendations: [
+    {
+      name: "Vahid Mohammadi",
+      profileUrl: "https://www.linkedin.com/in/vmohammadi/",
+      title: "Solutions Architect at Questrade Financial Group",
+      date: "December 17, 2024",
+      relationship: "Senior colleague at Questrade",
+      quote:
+        "I worked with Mir on several projects, and he always stood out for his curiosity, eagerness to learn, and attention to detail. He came up with creative ideas and solutions that improved our work and helped the team. Mir is great at solving problems and always stays positive. I highly recommend him to any company looking for a skilled and thoughtful developer.",
+    },
+    {
+      name: "Todd Leuzinger",
+      profileUrl: "https://www.linkedin.com/in/todd-leuzinger-2b341855/",
+      title: "Managing Director at TTC Management Solutions Ltd.",
+      date: "October 31, 2019",
+      relationship: "Worked with Mir on the same team",
+      quote:
+        "Azizur is one of the best among all the people I have worked with. His diversity and understanding of all aspects of programming constantly astounds me. As a team member, Azizur is a very productive person, he is hardworking, broad-minded and a forward thinking individual. Intelligent, ambitious, energetic and proactive perfectionist. A desire for proficiency and education makes Azizur a valuable asset to the team. It is a pleasure working with Azizur and look forward to working with him on many projects in the years to come.",
+    },
+    {
+      name: "George Speirs",
+      profileUrl: "https://www.linkedin.com/in/georgespeirs/",
+      title: "President & CEO at Konnected Technology Inc.",
+      date: "May 20, 2016",
+      relationship: "Managed Mir directly",
+      quote:
+        "Azizur is extremely detail oriented and highly skilled. He is able to breakdown complex problems into more manageable components and then implement solutions. He is a pleasure to work with and gives well over 100% effort to anything that he does. He fully understands all aspects of programming and the business decisions behind the plan.",
+    },
   ],
 } as const;
