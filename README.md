@@ -25,7 +25,7 @@ All profile content—experience, projects, skills, links, and availability—is
 
 ### Résumé
 
-Add the final résumé at `public/resume.pdf`. Until that file is supplied, the hero link is intentionally wired to that path and will return 404 locally.
+The résumé displayed by the hero button is stored at `public/resume.pdf`. Replace that file with the latest PDF whenever the résumé is updated, keeping the same filename.
 
 ## Deploying to Vercel
 
