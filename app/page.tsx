@@ -43,7 +43,6 @@ export default function Home() {
                     <div className="impact-icon">
                       <ImpactIcon type={( ["security", "cloud", "systems", "ai"] as const)[index]} />
                     </div>
-                    <span className="impact-number" aria-hidden="true">0{index + 1}</span>
                   </div>
                   <div className="impact-card-copy">
                     <h3>{item.title}</h3>
