@@ -11,6 +11,7 @@ export const profile = {
   availability:
     "Open to senior engineering and solutions architecture opportunities.",
   email: "hello@mirrahman.ca",
+  phone: "+15873703794",
   linkedin: "https://linkedin.com/in/axixur",
   recommendationsUrl: "https://www.linkedin.com/in/axixur/details/recommendations/",
   github: "https://github.com/microservices-dotnetcore",

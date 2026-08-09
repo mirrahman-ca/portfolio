@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { ArrowUpRight, GitHub, LinkedIn, Mail } from "./icons";
+import { ContactQr } from "./contact-qr";
+import { ArrowUpRight, GitHub, LinkedIn } from "./icons";
 import { profile } from "@/data/profile";
 import profilePicture from "@/profile-pic.png";
 
@@ -13,7 +14,7 @@ export function Hero() {
         <p className="hero-statement">{profile.statement}</p>
         <div className="hero-actions">
           <a className="button button-primary" href="/resume.pdf">View résumé <ArrowUpRight /></a>
-          <a className="button button-secondary" href={`mailto:${profile.email}`}><Mail /> Get in touch</a>
+          <ContactQr />
         </div>
         <div className="hero-links" aria-label="Social profiles">
           <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="Mir Rahman on LinkedIn" title="LinkedIn">
