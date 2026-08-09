@@ -18,7 +18,7 @@ export const profile = {
   certificationUrl:
     "https://cp.certmetrics.com/amazon/en/public/verify/credential/N3MBYZEJKBV41JWS",
   about: [
-    "I combine architecture thinking with hands-on delivery. My work spans APIs, backend services, asynchronous integrations, data platforms, security controls, reliability engineering, and the realities of operating software in production.",
+    "I combine software architecture design and systems thinking with hands-on delivery. My work spans solution design, APIs, backend services, asynchronous integrations, data platforms, security controls, reliability engineering, and the realities of operating software in production.",
     "I enjoy turning complex requirements into deployable designs—then staying close enough to the implementation to make sure they work. I have collaborated across disciplines and countries, helping teams make sound decisions by explaining technical trade-offs clearly and documenting the path forward.",
   ],
   impact: [
