@@ -22,8 +22,6 @@ export const profile = {
   linkedin: "https://linkedin.com/in/axixur",
   recommendationsUrl: "https://www.linkedin.com/in/axixur/details/recommendations/",
   github: "https://github.com/microservices-dotnetcore",
-  certificationUrl:
-    "https://cp.certmetrics.com/amazon/en/public/verify/credential/N3MBYZEJKBV41JWS",
   about: [
     "I combine software architecture design and systems thinking with hands-on delivery. My work spans solution design, APIs, backend services, asynchronous integrations, data platforms, security controls, reliability engineering, and the realities of operating software in production.",
     "I enjoy turning complex requirements into deployable designs—then staying close enough to the implementation to make sure they work. I have collaborated across disciplines and countries, helping teams make sound decisions by explaining technical trade-offs clearly and documenting the path forward.",
@@ -162,8 +160,18 @@ export const profile = {
     ["Observability & quality", "Datadog, Grafana, Prometheus, structured logging, xUnit, Moq, NSubstitute, Fluent Assertions"],
   ] as const,
   certifications: [
-    "AWS Certified Solutions Architect – Associate",
-    "AWS Certified Security – Specialty",
+    {
+      title: "AWS Certified Solutions Architect – Associate",
+      verificationUrl:
+        "https://cp.certmetrics.com/amazon/en/public/verify/credential/N3MBYZEJKBV41JWS",
+      verificationLabel: "Verify with AWS",
+    },
+    {
+      title: "AWS Certified Security – Specialty",
+      verificationUrl:
+        "https://www.credly.com/badges/46940313-f4a5-4729-b8fc-9e67435b08ea/public_url",
+      verificationLabel: "Verify on Credly",
+    },
   ],
   recommendations: [
     {

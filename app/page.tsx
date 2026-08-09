@@ -86,16 +86,21 @@ export default function Home() {
 
         <section id="certifications" className="section section-tinted certifications-section" aria-labelledby="certifications-title">
           <div className="shell">
-            <SectionHeading eyebrow="Certifications" title="Validated cloud expertise." />
+            <SectionHeading eyebrow="AWS Certifications" title="Validated cloud expertise." />
             <div className="certification-grid">
               {profile.certifications.map((certification) => (
-                <article className="certification-card" key={certification}>
+                <article className="certification-card" key={certification.title}>
                   <div className="aws-mark" aria-hidden="true">AWS</div>
-                  <div><p>Amazon Web Services</p><h3>{certification}</h3></div>
+                  <div className="certification-copy">
+                    <p>Amazon Web Services</p>
+                    <h3>{certification.title}</h3>
+                    <a className="certification-verify" href={certification.verificationUrl} target="_blank" rel="noreferrer">
+                      {certification.verificationLabel} <ArrowUpRight />
+                    </a>
+                  </div>
                 </article>
               ))}
             </div>
-            <a className="text-link" href={profile.certificationUrl} target="_blank" rel="noreferrer">Verify AWS certifications <ArrowUpRight /></a>
           </div>
         </section>
 
