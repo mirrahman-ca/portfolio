@@ -68,7 +68,7 @@ export default function Home() {
           <div className="shell">
             <SectionHeading eyebrow="Selected projects" title="Complex problems, made operational." intro="A selection of secure platforms, data systems, and distributed services delivered in regulated and demanding environments." />
             <div className="projects-grid">
-              {profile.projects.map((project, index) => <ProjectCard key={project.title} project={project} index={index} />)}
+              {profile.projects.map((project) => <ProjectCard key={project.title} project={project} />)}
             </div>
           </div>
         </section>

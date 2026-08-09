@@ -114,7 +114,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .impact-card:nth-child(3) .impact-icon { border-color: rgba(129, 140, 248, .25); background: rgba(99, 102, 241, .11); color: #a5b4fc; }
 .impact-card:nth-child(4) .impact-icon { border-color: rgba(192, 132, 252, .25); background: rgba(168, 85, 247, .1); color: #d8b4fe; }
 .impact-icon svg { width: 25px; height: 25px; }
-.project-number { color: #72849a; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .68rem; letter-spacing: .08em; }
 .impact-card-copy { margin-top: auto; position: relative; z-index: 1; }
 .impact-card h3 { max-width: 190px; margin: 54px 0 14px; font-family: var(--font-serif), Georgia, serif; font-size: 1.35rem; font-weight: 560; line-height: 1.2; letter-spacing: -.025em; }
 .impact-card p { margin: 0; color: var(--muted); font-size: .84rem; line-height: 1.68; }
@@ -153,7 +152,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .technology-line p { margin: 0; }
 
 .projects-grid { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid #385066; }
-.project-card { min-height: 360px; padding: 38px 38px 44px 0; display: grid; grid-template-columns: 52px 1fr; border-bottom: 1px solid #385066; }
+.project-card { min-height: 360px; padding: 38px 38px 44px 0; border-bottom: 1px solid #385066; }
 .project-card:nth-child(odd) { border-right: 1px solid rgba(148, 163, 184, .2); }
 .project-card:nth-child(even) { padding-left: 38px; }
 .project-number { color: #6eb9ed; }
@@ -269,7 +268,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .company-mark { width: 42px; height: 42px; }
   .timeline-content h3 { font-size: 1.65rem; }
   .technology-line { grid-template-columns: 1fr; gap: 6px; }
-  .project-card, .project-card:nth-child(even) { min-height: 0; padding: 32px 0 38px; grid-template-columns: 38px 1fr; border-right: 0; }
+  .project-card, .project-card:nth-child(even) { min-height: 0; padding: 32px 0 38px; border-right: 0; }
   .skill-row { grid-template-columns: 1fr; gap: 8px; padding: 20px 0; }
   .certification-card { align-items: flex-start; padding: 22px; }
   .beyond-card { min-height: 190px; padding: 25px; }
