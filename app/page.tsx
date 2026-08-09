@@ -2,7 +2,7 @@ import { ExperienceTimeline } from "@/components/experience-timeline";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
-import { ArrowUpRight, ImpactIcon, Mail } from "@/components/icons";
+import { ArrowUpRight, GitHub, ImpactIcon, LinkedIn, Mail } from "@/components/icons";
 import { ProjectCard } from "@/components/project-card";
 import { SectionHeading } from "@/components/section-heading";
 import { profile } from "@/data/profile";
@@ -155,8 +155,14 @@ export default function Home() {
             <a className="contact-email" href={`mailto:${profile.email}`}><Mail />{profile.email}</a>
             <div className="contact-meta">
               <span>{profile.location}</span>
-              <a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn <ArrowUpRight /></a>
-              <a href={profile.github} target="_blank" rel="noreferrer">GitHub <ArrowUpRight /></a>
+              <div className="contact-socials" aria-label="Social profiles">
+                <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="Mir Rahman on LinkedIn" title="LinkedIn">
+                  <LinkedIn />
+                </a>
+                <a href={profile.github} target="_blank" rel="noreferrer" aria-label="Mir Rahman on GitHub" title="GitHub">
+                  <GitHub />
+                </a>
+              </div>
             </div>
           </div>
         </section>
