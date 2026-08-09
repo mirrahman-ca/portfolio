@@ -29,7 +29,7 @@ Tone: confident, precise, warm, senior, and human. Do not use generic marketing 
 
 ### Primary headline
 
-> Senior Software Engineer & Cloud Solutions Architect
+> Solutions Architect & Senior Software Engineer
 
 ### Supporting statement
 
@@ -256,7 +256,7 @@ Include concise links to LinkedIn, GitHub, WhyWhyWhy, and Cloudynix.
 
 Use title:
 
-`Mir Rahman | Senior Software Engineer & Cloud Solutions Architect`
+`Mir Rahman | Solutions Architect & Senior Software Engineer`
 
 Use description:
 

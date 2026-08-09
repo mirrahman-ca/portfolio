@@ -2,7 +2,7 @@ export const profile = {
   name: "Mir Rahman",
   initials: "MR",
   location: "Vancouver, BC, Canada",
-  title: "Senior Software Engineer & Cloud Solutions Architect",
+  title: "Solutions Architect & Senior Software Engineer",
   statement:
     "I design and deliver secure, scalable backend systems, cloud platforms, data workflows, and AI-assisted services for regulated and operationally demanding environments.",
   summary:

@@ -7,7 +7,7 @@ const sourceSerif = Source_Serif_4({ subsets: ["latin"], variable: "--font-serif
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mirrahman.ca"),
-  title: "Mir Rahman | Senior Software Engineer & Cloud Solutions Architect",
+  title: "Mir Rahman | Solutions Architect & Senior Software Engineer",
   description:
     "Portfolio of Mir Rahman, an AWS-certified Solutions Architect and Senior Software Engineer building secure, scalable cloud systems, distributed services, data workflows, and AI-assisted applications.",
   alternates: { canonical: "/" },
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "website",
     url: "/",
     siteName: "Mir Rahman",
-    title: "Mir Rahman | Senior Software Engineer & Cloud Solutions Architect",
+    title: "Mir Rahman | Solutions Architect & Senior Software Engineer",
     description: "Secure cloud systems, distributed services, data workflows, and practical AI integration.",
   },
   twitter: { card: "summary_large_image" },
