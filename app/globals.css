@@ -71,7 +71,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .hero-links a:hover { color: #7dd3fc; border-color: rgba(56, 189, 248, .4); background: rgba(14, 165, 233, .08); transform: translateY(-2px); }
 .text-link, .contact-meta a { display: inline-flex; align-items: center; gap: 5px; color: var(--muted); font-size: .82rem; font-weight: 680; }
 .hero-links a:hover, .text-link:hover, .contact-meta a:hover { color: var(--accent); }
-.qr-dialog { width: min(92vw, 450px); max-width: none; max-height: 92vh; padding: 0; overflow: visible; border: 1px solid rgba(56, 189, 248, .28); border-radius: 20px; background: #081426; color: var(--ink); box-shadow: 0 35px 90px rgba(0, 0, 0, .65); }
+.qr-dialog { position: fixed; inset: 0; width: min(92vw, 450px); max-width: none; max-height: 92vh; margin: auto; padding: 0; overflow: auto; border: 1px solid rgba(56, 189, 248, .28); border-radius: 20px; background: #081426; color: var(--ink); box-shadow: 0 35px 90px rgba(0, 0, 0, .65); }
 .qr-dialog::backdrop { background: rgba(1, 4, 14, .78); backdrop-filter: blur(7px); }
 .qr-dialog-card { position: relative; padding: 35px 36px 31px; text-align: center; }
 .qr-dialog-card .eyebrow { margin-bottom: 10px; }
