@@ -8,7 +8,7 @@ export function Hero() {
     <section className="hero shell" aria-labelledby="hero-title">
       <div className="hero-copy">
         <p className="eyebrow location"><span aria-hidden="true" />{profile.location}</p>
-        <h1 id="hero-title">{profile.name}</h1>
+        <h1 id="hero-title">{profile.displayName}</h1>
         <p className="hero-title">{profile.title}</p>
         <p className="hero-statement">{profile.statement}</p>
         <div className="hero-actions">

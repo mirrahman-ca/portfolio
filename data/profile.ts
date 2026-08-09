@@ -1,5 +1,6 @@
 export const profile = {
   name: "Mir Rahman",
+  displayName: "Mir R.",
   initials: "MR",
   location: "Vancouver, BC, Canada",
   title: "Solutions Architect & Senior Software Engineer",
