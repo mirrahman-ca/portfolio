@@ -153,7 +153,7 @@ export default function Home() {
           <div className="shell contact-inner">
             <p className="eyebrow">Contact</p>
             <h2>Let’s build something reliable.</h2>
-            <p>Have a complex system to design, a platform to improve, or a senior engineering role to discuss? I’d be glad to hear about it.</p>
+            <p>Have a complex system to design, a platform to improve, or a senior engineering role to discuss? I’d be glad to hear about it. Let’s connect.</p>
             <a className="contact-email" href={`mailto:${profile.email}`}><Mail />{profile.email}</a>
             <div className="contact-meta">
               <span>{profile.location}</span>
@@ -163,6 +163,24 @@ export default function Home() {
                 </a>
                 <a href={profile.github} target="_blank" rel="noreferrer" aria-label="Mir Rahman on GitHub" title="GitHub">
                   <GitHub />
+                </a>
+              </div>
+            </div>
+            <div className="location-map">
+              <iframe
+                src={profile.map.embedUrl}
+                title={`Map of ${profile.map.label}`}
+                loading="lazy"
+                referrerPolicy="no-referrer"
+              />
+              <div className="location-map-caption">
+                <div>
+                  <span className="location-map-dot" aria-hidden="true" />
+                  <p>Based in</p>
+                  <strong>{profile.map.label}</strong>
+                </div>
+                <a href={profile.map.viewUrl} target="_blank" rel="noreferrer">
+                  View larger map <ArrowUpRight />
                 </a>
               </div>
             </div>

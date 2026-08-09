@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>why? why?? why???</title>
+  <defs>
+    <linearGradient id="icon-gradient" x1="8" y1="6" x2="58" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8b5cf6"/>
+      <stop offset=".52" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="#020617"/>
+  <path d="M32 9C18 9 8 19 8 31c0 8 4 15 11 19v9l9-6h5c14 0 25-10 25-22S46 9 32 9Z" fill="#071426" stroke="url(#icon-gradient)" stroke-width="4"/>
+  <text x="33" y="40" fill="#f8fafc" font-family="ui-monospace, monospace" font-size="25" font-weight="800" text-anchor="middle">?</text>
+  <circle cx="19" cy="20" r="3" fill="#8b5cf6"/>
+  <circle cx="45" cy="18" r="3" fill="#38bdf8"/>
+  <circle cx="48" cy="43" r="3" fill="#2dd4bf"/>
+</svg>

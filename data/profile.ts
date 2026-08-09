@@ -3,6 +3,13 @@ export const profile = {
   displayName: "Mir R.",
   initials: "MR",
   location: "Vancouver, BC, Canada",
+  map: {
+    label: "Vancouver, British Columbia",
+    embedUrl:
+      "https://www.google.com/maps?q=Vancouver%2C%20British%20Columbia&z=11&output=embed",
+    viewUrl:
+      "https://www.google.com/maps/search/?api=1&query=Vancouver%2C%20British%20Columbia",
+  },
   title: "Solutions Architect & Senior Software Engineer",
   statement:
     "I design and deliver secure, scalable backend systems, cloud platforms, data workflows, and AI-assisted services for regulated and operationally demanding environments.",
