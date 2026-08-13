@@ -13,7 +13,7 @@ export function Hero() {
         <p className="hero-title">{profile.title}</p>
         <p className="hero-statement">{profile.statement}</p>
         <div className="hero-actions">
-          <a className="button button-primary" href="/resume.pdf">View résumé <ArrowUpRight /></a>
+          <a className="button button-primary" href="/resume">View résumé <ArrowUpRight /></a>
           <ContactQr />
         </div>
         <div className="hero-links" aria-label="Social profiles">

@@ -266,6 +266,16 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .footer-site-link img { width: 17px; height: 17px; object-fit: contain; }
 .footer a:hover { color: white; }
 
+.resume-viewer { min-height: 100svh; display: flex; flex-direction: column; background: #0b1220; }
+.resume-toolbar { min-height: 82px; padding: 14px max(24px, calc((100vw - 1160px) / 2)); display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid var(--line); background: rgba(2, 6, 23, .96); box-shadow: 0 12px 30px rgba(0, 0, 0, .24); }
+.resume-toolbar-copy { min-width: 0; }
+.resume-toolbar h1 { margin: 2px 0 0; color: #f8fafc; font-family: var(--font-serif), Georgia, serif; font-size: clamp(1.05rem, 2vw, 1.35rem); font-weight: 560; letter-spacing: -.02em; line-height: 1.25; }
+.resume-back { color: #7dd3fc; font-size: .72rem; font-weight: 750; letter-spacing: .04em; }
+.resume-back:hover { color: white; }
+.resume-download { min-height: 46px; padding-inline: 18px; flex: 0 0 auto; }
+.resume-document { min-height: 0; flex: 1; padding: 18px; }
+.resume-document iframe { width: 100%; height: calc(100svh - 118px); display: block; border: 1px solid rgba(148, 163, 184, .24); border-radius: 12px; background: white; box-shadow: 0 22px 60px rgba(0, 0, 0, .32); }
+
 .reveal-pending { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--reveal-delay, 0ms) cubic-bezier(.22, 1, .36, 1), transform .7s var(--reveal-delay, 0ms) cubic-bezier(.22, 1, .36, 1); }
 .reveal-pending.reveal-visible { opacity: 1; transform: translateY(0); }
 
@@ -340,6 +350,11 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .location-map iframe { height: 260px; }
   .location-map-caption { padding: 18px; align-items: flex-start; flex-direction: column; gap: 15px; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
+  .resume-toolbar { min-height: 132px; padding: 14px 16px; align-items: stretch; flex-direction: column; gap: 10px; }
+  .resume-toolbar h1 { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .resume-download { width: 100%; }
+  .resume-document { padding: 8px; }
+  .resume-document iframe { height: calc(100svh - 148px); border-radius: 8px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
